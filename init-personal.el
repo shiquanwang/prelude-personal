@@ -55,12 +55,12 @@
 (unless (server-running-p) (server-start))
 
 ;; the core stuff
-;; (require 'prelude-personal-proxy)
-;; (require 'prelude-personal-packages)
-;; (require 'prelude-personal-ui)
+(require 'prelude-personal-proxy)
+(require 'prelude-personal-packages)
+(require 'prelude-personal-ui)
 ;; (require 'prelude-personal-core)
 ;; (require 'prelude-personal-mode)
-;; (require 'prelude-personal-editor)
+(require 'prelude-personal-editor)
 ;; (require 'prelude-personal-global-keybindings)
 
 ;; windows-nt specific settings
