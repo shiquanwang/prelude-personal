@@ -41,3 +41,7 @@ tramp
 
 # cask packages
 .cask/
+
+### Prelue Personal ###
+# modules
+/prelude-personal-modules.el
