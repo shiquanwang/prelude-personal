@@ -44,9 +44,9 @@
 ;; Add prelude-personal's directories to Emacs's `load-path'
 (add-to-list 'load-path prelude-personal-core-dir)
 (add-to-list 'load-path prelude-personal-modules-dir)
-(add-to-list 'load-path prelude-personal-vendor-dir)
+;; (add-to-list 'load-path prelude-personal-vendor-dir)
 (add-to-list 'load-path prelude-personal-utilities-dir)
-(prelude-add-subfolders-to-load-path prelude-personal-vendor-dir)
+;; (prelude-add-subfolders-to-load-path prelude-personal-vendor-dir)
 (prelude-add-subfolders-to-load-path prelude-personal-utilities-dir)
 
 ;; start Emacs server if not started
