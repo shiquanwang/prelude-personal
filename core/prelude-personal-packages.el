@@ -45,6 +45,20 @@
 
 (prelude-personal-install-packages)
 
+(defvar prelude-personal-auto-install-alist
+  '(("\\.cu\\'" cuda-mode cuda-mode)
+    ))
+
+;; build auto-install mappings
+(mapc
+ (lambda (entry)
+   (let ((extension (car entry))
+         (package (cadr entry))
+         (mode (cadr (cdr entry))))
+     (unless (package-installed-p package)
+       (prelude-auto-install extension package mode))))
+ prelude-personal-auto-install-alist)
+
 (provide 'prelude-personal-packages)
 ;; Local Variables:
 ;; byte-compile-warnings: (not cl-functions)
